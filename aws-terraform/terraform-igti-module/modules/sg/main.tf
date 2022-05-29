@@ -1,5 +1,9 @@
 resource "aws_security_group" "app_server_sg" {
   name    = "app_server_sg_no_module"
+  tags = {
+    Name = "nsg-app_server_mod",
+    Projeto = "mod-03"
+  }
 }
 
 ############ Inbound Rules ############
